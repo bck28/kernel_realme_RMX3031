@@ -1049,7 +1049,7 @@ void core_ctl_tick(u64 wallclock)
 	struct cluster_data *ab_cluster;
 	struct cluster_data *prev_ab_cluster;
 
-	sched_max_util_task(NULL, NULL, &max_util, NULL);
+	//sched_max_util_task(NULL, NULL, &max_util, NULL);
 	ts_cpu7 = get_immediate_tslvts1_1_wrap();
 
 	spin_lock_irqsave(&state_lock, flags);
